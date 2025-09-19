@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --black: #101010;
+    --cream: #fbf8ee;
+    /* --font-size-base: 16px; */
+}
+
+
+.font-heading {
+    font-family: 'Poppins';
+}
+
+.font-subheading {
+    font-family: 'space mono';
+}
+
+.font-body {
+    font-family: 'nunito sans';
+}
+
+.font-accent {
+    font-family: 'caveat';
+}
+
+.fg-cream {
+    color: var(--cream);
+}
+.bg-black {
+    color: var(--black);
+}
+
+
+
+
+
+html,body {
+    margin:0; padding: 0;
+    background-color: var(--black);
+    max-width:900px;
+    margin: 0 auto;
+}
+
+
+#header {
+    margin: 10px;
+    background-color: var(--black) ;
+    color: var(--cream);
+    border-radius: 6px;
+    border: 3px solid var(--cream);
+    
+    padding:  10px;
+    
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    
+    /* border: 2px solid red; */
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-left a {
+    color: var(--cream) ;
+    text-decoration: none;
+}
+
+#header-left h3 {
+    margin: 4px;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+}
+
+#header-right a {
+    margin: 0 10px;
+    font-size: 0.8rem;
+    color: var(--cream) ;
+}
+
+#header-drop {
+    display: none ;
+}
+
+#header-drop > div {
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#burger-btn {
+    display: none;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#header-drop a {
+    margin: 10px 0px;
+    font-size: 0.8rem;
+    color: var(--cream) ;
+}
+
+#burger-icon-btn:checked ~ #header-drop {
+    display: block;
+    background-color: aqua;
+} 
+
+
+#main {
+    margin: 20px;
+}
+
+
+
+@media only screen and (max-width: 470px) {
+    /* body {
+        background-color: lightblue;
+    } */
+    #header-right > div:nth-child(1) {
+        display: none;
+    }
+    #burger-btn {
+        display: block;
+    }
+}
