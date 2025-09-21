@@ -1,12 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-:root {
+/* :root {
     --black: #101010;
-    --cream: #fbf8ee
-    /* --font-size-base: 16px; */
+    --cream: #fbf8ee;
+ 
+} */
+:root {
+  --text: #fffbee;
+  --background: #0f1421;
+  --primary: #f9f57b;
+  --secondary: #ec465f;
+  --accent: #6da694;
 }
-
 
 .font-heading {
     font-family: 'Poppins';
@@ -18,37 +24,59 @@
 
 .font-body {
     font-family: 'nunito sans';
+    font-size: 0.8rem;
 }
 
 .font-accent {
     font-family: 'caveat';
 }
 
-.fg-cream {
-    color: var(--cream);
+.fg-text {
+    color: var(--text);
 }
-.bg-black {
-    color: var(--black);
+.bg-bg {
+    color: var(--background);
 }
 
 
+.highlighted-link {
+    font-size: 0.9rem; 
+    word-spacing: -4px;
+    background-color: var(--text); 
+    color: var(--background); 
+    border-radius: 5px; 
+    padding: 0 5px;
+    font-family: 'space mono';
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 2px 5px 0 var(--secondary);
+    transition: all 0.2s;
+}
 
+.highlighted-link:hover {
+    filter: brightness(0.9);
+    box-shadow: 0px 1px 0 var(--accent);
+    transition: all 0.2s;
+}
 
 
 html,body {
-    margin:0; padding: 0;
-    background-color: var(--black);
+    padding: 0;
+    background-color: var(--background);
+    max-width:900px;
+    margin: 0px auto;
 }
 
 
 #header {
-    margin: 10px;
-    background-color: var(--black) ;
-    color: var(--cream);
-    border-radius: 6px;
-    border: 3px solid var(--cream);
+    /* margin: 10px; */
+    background-color: rgba(0,0,0,0);
+    /* background-color: var(--black) ; */
+    color: var(--text);
+    /* border-radius: 6px; */
+    border-bottom: 1px solid var(--text);
     
-    padding:  10px;
+    padding:  18px;
     
 }
 
@@ -67,7 +95,7 @@ html,body {
 }
 
 #header-left a {
-    color: var(--cream) ;
+    color: var(--text) ;
     text-decoration: none;
 }
 
@@ -83,10 +111,35 @@ html,body {
 #header-right a {
     margin: 0 10px;
     font-size: 0.8rem;
-    color: var(--cream) ;
+    color: var(--text) ;
 }
+
+#header-drop {
+    display: none ;
+}
+
+#header-drop > div {
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#burger-btn {
+    display: none;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#header-drop a {
+    margin: 10px 0px;
+    font-size: 0.8rem;
+    color: var(--text) ;
+}
+
 
 
 #main {
     margin: 20px;
+    margin-top: 50px;
 }

@@ -64,19 +64,19 @@ html,body {
     padding: 0;
     background-color: var(--background);
     max-width:900px;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 
 #header {
-    margin: 10px;
+    /* margin: 10px; */
     background-color: rgba(0,0,0,0);
     /* background-color: var(--black) ; */
     color: var(--text);
-    border-radius: 6px;
-    border: 3px solid var(--text);
+    /* border-radius: 6px; */
+    border-bottom: 1px solid var(--text);
     
-    padding:  10px;
+    padding:  18px;
     
 }
 
@@ -141,6 +141,7 @@ html,body {
 
 #main {
     margin: 20px;
+    margin-top: 50px;
 }
 #main > img {
     max-height: 400px;
