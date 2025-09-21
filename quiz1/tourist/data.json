@@ -1,0 +1,25 @@
+[
+    {
+        "title" : "Tugu Pahlawan",
+        "desc"  : " Tugu Pahlawan is a monument in surabaya that is built to remember the heroes, especially who fought in the battle of surabaya on November 10, 1945. The monument itself has 10 rows and 11 pillars with a 45-yard height. The number is not random. Every number I mentioned before is the date of battle surabaya 10/11/45",
+        "img_src" : "https://upload.wikimedia.org/wikipedia/commons/3/3e/Tugu_Pahlawan_Surabaya.jpg",
+        "Location" : ""
+    },
+    {
+        "title" : "Monkasel",
+        "desc"  : "If you ever wondered where can I see submarine diving in the air? Well, you can see it in Surabaya. It is located in Jalan Pemuda No.39 and adjacent to Plaza Surabaya.<br><br>This submarine called with the name of \"KRI Pasopati 410\". From the beginning, Pasopati joined one of the important missions, Tri Kora, in 1962. This mission goal is to hold the Irian Barat in the Indonesian hand. After that mission, Pasopati has been serving the indonesian army for about 30 years from 1962 through 1989.<br><br>Monkasel was built for the public to learn about submarines and also to remember Pasopati's 30 years plus journey with the indonesian Navy.",
+        "img_src" : "https://awsimages.detik.net.id/community/media/visual/2022/03/09/monkasel_43.jpeg?w=600&q=90",
+        "Location" : ""
+    },
+    {
+        "title" : "Suramadu Bridge",
+        "desc" : "How do we connect 2 islands? By sea? So common. By air? Yea could be. But by land is the most efficient way to connect 2 islands, especially with a lot of daily users. Suramadu or \"SURAbaya MADUra\" is a bridge that holds the record for the longest bridge in Indonesia. Suramadu itself has 5KM length.",
+        "img_src" : "https://ma-miftahulhuda.sch.id/media_library/posts/large/71edf4c13121a0e4f12ea72eb5bdbb12.jpg",
+        "Location" : ""
+    },
+    {
+        "title" : "Tugu Pahlawan",
+        "desc"  : " Lorem Ipsum Dolor Sit amet",
+        "Location" : ""
+    }
+]

@@ -39,6 +39,8 @@
 }
 
 
+
+
 .highlighted-link {
     font-size: 0.9rem; 
     word-spacing: -4px;
@@ -60,23 +62,24 @@
 }
 
 
+
 html,body {
     padding: 0;
     background-color: var(--background);
     max-width:900px;
-    margin: 0px auto;
+    margin: 10px auto;
 }
 
 
 #header {
-    /* margin: 10px; */
+    margin: 10px;
     background-color: rgba(0,0,0,0);
     /* background-color: var(--black) ; */
     color: var(--text);
-    /* border-radius: 6px; */
-    border-bottom: 1px solid var(--text);
+    border-radius: 6px;
+    border: 3px solid var(--text);
     
-    padding:  18px;
+    padding:  10px;
     
 }
 
@@ -141,20 +144,40 @@ html,body {
 
 #main {
     margin: 20px;
-    margin-top: 50px;
 }
-#main > img {
-    max-height: 400px;
-    object-fit: cover;
-    box-shadow: 0px 0px 11px var(--text);
-    border-radius: 10px;
-}
+
 #main > p {
     text-align: justify;
     margin: 20px 0;
     padding-left: 30px;
     border-left: 3px solid var(--text);
 }
+
+
+
+.list-item {
+    display: flex;
+    max-height: 200px;
+    text-align: center;
+    border-bottom: 2px outset var(--text);
+    padding: 10px;
+}
+.list-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.list-item > div {
+    width: 50%;
+    padding: 10px;
+    margin: auto 0;
+}
+.list-item img {
+    max-height: 150px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 
 
 
@@ -168,10 +191,46 @@ html,body {
     #burger-btn {
         display: block;
     }
+
+    .list-item , .list-item:nth-child(even) {
+        max-height: 500px;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .list-item div {
+        width: 100%;
+    }
+
+    .list-item img {
+        height: 800px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 471px) {
+    /* body {
+        background-color: lightblue;
+    } */
+    .list-item {
+        max-height: 400px;
+    }
+
+    .list-item img {
+        max-height: 300px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
 }
 
 @media only screen and (min-width: 1020px) {
     /* body {
         background-color: lightblue;
     } */
+    body {
+        /* scale: 1.2; */
+        margin: 20px auto;
+    }
 }
