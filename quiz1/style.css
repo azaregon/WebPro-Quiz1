@@ -38,6 +38,112 @@
     color: var(--background);
 }
 
+
+.highlighted-link {
+    font-size: 0.9rem; 
+    word-spacing: -4px;
+    background-color: var(--text); 
+    color: var(--background); 
+    border-radius: 5px; 
+    padding: 0 5px;
+    font-family: 'space mono';
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 2px 5px 0 var(--secondary);
+    transition: all 0.2s;
+}
+
+.highlighted-link:hover {
+    filter: brightness(0.9);
+    box-shadow: 0px 1px 0 var(--accent);
+    transition: all 0.2s;
+}
+
+
+html,body {
+    padding: 0;
+    background-color: var(--background);
+    max-width:900px;
+    margin: 0px auto;
+}
+
+
+#header {
+    /* margin: 10px; */
+    background-color: rgba(0,0,0,0);
+    /* background-color: var(--black) ; */
+    color: var(--text);
+    /* border-radius: 6px; */
+    border-bottom: 1px solid var(--text);
+    
+    padding:  18px;
+    
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    
+    /* border: 2px solid red; */
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-left a {
+    color: var(--text) ;
+    text-decoration: none;
+}
+
+#header-left h3 {
+    margin: 4px;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+}
+
+#header-right a {
+    margin: 0 10px;
+    font-size: 0.8rem;
+    color: var(--text) ;
+}
+
+#header-drop {
+    display: none ;
+}
+
+#header-drop > div {
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#burger-btn {
+    display: none;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#header-drop a {
+    margin: 10px 0px;
+    font-size: 0.8rem;
+    color: var(--text) ;
+}
+
+
+
+#main {
+    margin: 20px;
+    margin-top: 50px;
+}
+
 body {
     background-color: var(--background);
 }
@@ -114,4 +220,15 @@ h1 {
     text-decoration-color: var(--cream);
     transition: all 0.1s ;
     
+}
+@media only screen and (max-width: 470px) {
+    /* body {
+        background-color: lightblue;
+    } */
+    #header-right > div:nth-child(1) {
+        display: none;
+    }
+    #burger-btn {
+        display: block;
+    }
 }

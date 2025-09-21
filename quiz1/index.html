@@ -5,30 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div id="hero">
-    <div id="container">
-        <div id="top-text">
-            <span class="font-accent" style=" font-size: 1.8rem; ">
-                <b><i>Assignment for</i></b>
-            </span>
-        </div>
-        <div id="main-text">
-            <h1 class="font-heading" style="text-align: center;">QUIZ-1</h1>
-            <span style="text-align: center; color: var(--text); font-family: 'space mono';">Ananda Aryasatya Z A | 5025241142</span>
+    <div id="header">
+        
+        <div id="header-container">
+            <div id="header-left" >
+                <a href="/quiz1/" class="font-heading"><h3>QUIZ-1</h3></a>
+            </div>
+            <div id="header-right">
+                <div class="font-subheading">
+                    <a href="/quiz1/hometown/">Hometown</a>
+                    <a href="/quiz1/tourist/">Tourist_place</a>
+                    <a href="/quiz1/food/">Local_Food</a>
+                </div>
+                <div id="burger-btn">
+                    <input type="checkbox" name="burger-icon-btn" id="burger-icon-btn" style="display: none;">
+                    <label for="burger-icon-btn">☰</label>
+                </div>
+            </div>
         </div>
 
-        <div id="links">
-            <h3 class="font-subheading fg-text" style="text-align: center;">Links</h3>
-            <ul class="font-subheading">
-                <li><a href="/quiz1/hometown/">Hometown</a></li>
-                <li><a href="/quiz1/tourist">Tourist_place</a></li>
-                <li><a href="/quiz1/food">Local_Food</a></li>
-                <li><a href="/quiz1/profile">Profile</a></li>
-            </ul>
+        <div id="header-drop" >
+            <div class="font-subheading">
+                <a href="/quiz1/hometown/">Hometown</a>
+                <a href="/quiz1/tourist/">Tourist_place</a>
+                <a href="/quiz1/food/">Local_Food</a>
+            </div>
         </div>
     </div>
+
+    <div id="hero">
+        <div id="container">
+            <div id="top-text">
+                <span class="font-accent" style=" font-size: 1.8rem; ">
+                    <b><i>Assignment for</i></b>
+                </span>
+            </div>
+            <div id="main-text">
+                <h1 class="font-heading" style="text-align: center;">QUIZ-1</h1>
+                <span style="text-align: center; color: var(--text); font-family: 'space mono';">Ananda Aryasatya Z A | 5025241142</span>
+            </div>
+
+            <div id="links">
+                <h3 class="font-subheading fg-text" style="text-align: center;">Links</h3>
+                <ul class="font-subheading">
+                    <li><a href="/quiz1/hometown/">Hometown</a></li>
+                    <li><a href="/quiz1/tourist">Tourist_place</a></li>
+                    <li><a href="/quiz1/food">Local_Food</a></li>
+                    <li><a href="/quiz1/profile">Profile</a></li>
+                </ul>
+            </div>
+        </div>
     </div>    
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
