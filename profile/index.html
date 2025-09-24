@@ -5,21 +5,36 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-    <div id="header">
+    <div id="header" style="z-index: 9;">
+        
         <div id="header-container">
             <div id="header-left" >
                 <a href="/quiz1/" class="font-heading"><h3>QUIZ-1</h3></a>
             </div>
             <div id="header-right">
                 <div class="font-subheading">
-                    <a href="">Hometown</a>
-                    <a href="">Tourist_place</a>
-                    <a href="">Local_Food</a>
+                    <a href="/quiz1/hometown/">Hometown</a>
+                    <a href="/quiz1/tourist/">Tourist_place</a>
+                    <a href="/quiz1/food/">Local_Food</a>
                 </div>
+                <div id="burger-btn">
+                    <input type="checkbox" name="burger-icon-btn" id="burger-icon-btn" style="display: none;">
+                    <label for="burger-icon-btn">☰</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-drop" >
+            <div class="font-subheading">
+                <a href="/quiz1/hometown/">Hometown</a>
+                <a href="/quiz1/tourist/">Tourist_place</a>
+                <a href="/quiz1/food/">Local_Food</a>
             </div>
         </div>
     </div>
@@ -72,25 +87,25 @@
                 <div class="project-card">
                     <div class="project-card-container">
                         <div class="project-text">
-                            <h3 class="font-subheading fg-text">NAMA Proyek</h3>
+                            <h3 class="font-subheading fg-text">
+                                BudgetIn.
+                            </h3>
                             <div class="chips">
                                 <div class="chip-item font-body fg-text">
-                                    Python
-                                </div>
-                                <div class="chip-item font-body fg-text">
-                                    Flask
+                                    Swift
                                 </div>
                             </div>
-                            <p class="font-body fg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias totam perspiciatis fuga quia minima nesciunt.</p>                            
-                            <a class="card-btn font-body" href="">See Projects</a>
+                            <p class="font-body fg-text">Control your income, expenses, finances freely with Budgetin <br>
+                                (part of Apple Foundation Academy project)</p>                            
+                            <a class="card-btn font-body" href="https://github.com/azaregon/BudgetIn.">See Projects</a>
                         </div>
-                        <img src="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2020/04/Internship-Alfian-Dharma-Server.jpg" alt="">
+                        <img src="/assets/project/BudgetIn.jpg" alt="">
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-card-container">
                         <div class="project-text">
-                            <h3 class="font-subheading fg-text">NAMA Proyek</h3>
+                            <h3 class="font-subheading fg-text">Scito's Art Gallery</h3>
                             <div class="chips">
                                 <div class="chip-item font-body fg-text">
                                     Python
@@ -99,34 +114,37 @@
                                     Flask
                                 </div>
                             </div>
-                            <p class="font-body fg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias totam perspiciatis fuga quia minima nesciunt.</p>                            
-                            <a class="card-btn font-body" href="">See Projects</a>
+                            <p class="font-body fg-text">View my highschool class practical exam paintings on website</p>                            
+                            <a class="card-btn font-body" href="https://www.aaryasatya.com/SAG">See Projects</a>
                         </div>
-                        <img src="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2020/04/Internship-Alfian-Dharma-Server.jpg" alt="">
+                        <img src="/assets/project/SAG.jpg" alt="">
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-card-container">
                         <div class="project-text">
-                            <h3 class="font-subheading fg-text">NAMA Proyek</h3>
+                            <h3 class="font-subheading fg-text">Work2Flow (in progress)</h3>
                             <div class="chips">
                                 <div class="chip-item font-body fg-text">
-                                    Python
+                                    Bulma
                                 </div>
                                 <div class="chip-item font-body fg-text">
                                     Flask
                                 </div>
+                                <div class="chip-item font-body fg-text">
+                                    SQLite
+                                </div>
                             </div>
-                            <p class="font-body fg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias totam perspiciatis fuga quia minima nesciunt.</p>                            
-                            <a class="card-btn font-body" href="">See Projects</a>
+                            <p class="font-body fg-text">Want to give other people assignment and keep track of it? You can track it with Work2Flow</p>                            
+                            <a class="card-btn font-body" href="https://github.com/azaregon/Work2Flow">See Projects</a>
                         </div>
-                        <img src="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2020/04/Internship-Alfian-Dharma-Server.jpg" alt="">
+                        <img src="/assets/project/W2F.jpg" alt="">
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-card-container">
                         <div class="project-text">
-                            <h3 class="font-subheading fg-text">NAMA Proyek</h3>
+                            <h3 class="font-subheading fg-text">OddOrEven</h3>
                             <div class="chips">
                                 <div class="chip-item font-body fg-text">
                                     Python
@@ -135,10 +153,10 @@
                                     Flask
                                 </div>
                             </div>
-                            <p class="font-body fg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestias totam perspiciatis fuga quia minima nesciunt.</p>                            
-                            <a class="card-btn font-body" href="">See Projects</a>
+                            <p class="font-body fg-text">Web minigame requires you to do quick math calculation. Answer math equation using even or odd</p>                            
+                            <a class="card-btn font-body" href="https://www.aaryasatya.com/OOE">See Projects</a>
                         </div>
-                        <img src="https://dicoding-assets.sgp1.cdn.digitaloceanspaces.com/blog/wp-content/uploads/2020/04/Internship-Alfian-Dharma-Server.jpg" alt="">
+                        <img src="/assets/project/OOE.jpg" alt="">
                     </div>
                 </div>
 
@@ -150,5 +168,7 @@
         
     </div>
     
+
+    <script src="scripts.js"></script>
 </body>
 </html>

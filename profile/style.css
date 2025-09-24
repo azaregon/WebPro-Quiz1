@@ -323,3 +323,40 @@ html,body {
     margin: 0px 2px;
     font-size: 0.7rem;
 }
+
+@media only screen and (max-width: 799px) {
+    /* body {
+        background-color: lightblue;
+    } */
+    #header-right > div:nth-child(1) {
+        display: none;
+    }
+    #burger-btn {
+        display: block;
+    }
+
+    #projects-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #lineMid {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    #lineMid > h1 {
+        text-align: center;
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width: 1020px) {
+    /* body {
+        background-color: lightblue;
+    } */
+}
