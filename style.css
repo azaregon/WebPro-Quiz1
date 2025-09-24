@@ -12,6 +12,7 @@
   --primary: #f9f57b;
   --secondary: #ec465f;
   --accent: #6da694;
+    --header-height: 64px; /* default header height used by calc() approach */
 }
 
 .font-heading {
@@ -33,6 +34,15 @@
 
 .fg-text {
     color: var(--text);
+}
+.fg-primary {
+    color: var(--primary);
+}
+.fg-secondary {
+    color: var(--secondary);
+}
+.fg-accent {
+    color: var(--accent);
 }
 .bg-bg {
     color: var(--background);
@@ -63,21 +73,19 @@
 html,body {
     padding: 0;
     background-color: var(--background);
-    max-width:900px;
+    /* max-width:900px; */
     margin: 0px auto;
 }
 
 
 #header {
-    /* margin: 10px; */
+    /* width: 100vw; */
     background-color: rgba(0,0,0,0);
-    /* background-color: var(--black) ; */
     color: var(--text);
-    /* border-radius: 6px; */
     border-bottom: 1px solid var(--text);
-    
-    padding:  18px;
-    
+    height: var(--header-height);
+    line-height: var(--header-height); /* vertically center inline content */
+    padding: 0 18px; /* horizontal padding, vertical handled by height */
 }
 
 #header-container {
@@ -137,17 +145,31 @@ html,body {
     color: var(--text) ;
 }
 
+
+
+
+
+
+
+
+
 #hero {
     background-color: var(--background) ;
     background-image: url('https://images.unsplash.com/photo-1516410290616-fb59b7994a51?q=80&w=843&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-blend-mode:lighten;
+    height: calc(100dvh - 65px);
     
 }
 
 #main {
-    margin: 20px;
-    margin-top: 50px;
+    /* remove top margin so header + main can exactly fill viewport */
+    margin: 0;
+    padding: 20px;
+    /* subtract header height from viewport height */
+    height: calc(100dvh - 65px);
+    overflow: auto; /* allow internal scrolling if content is taller */
 }
+
 
 body {
     background-color: var(--background);
@@ -158,16 +180,12 @@ h1 {
     color: var(--text);
 }
 
-#header {
-    position: sticky;
-}
-
 #container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: inherit;
 }
 
 #top-text {
