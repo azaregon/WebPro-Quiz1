@@ -33,7 +33,7 @@ function fillTheList(data) {
 
 
 $(document).ready(function () {
-    fetch('/food/data.json').then((res) => {
+    fetch('/quiz1/food/data.json').then((res) => {
         jsonres = res.json()
 
         return jsonres
