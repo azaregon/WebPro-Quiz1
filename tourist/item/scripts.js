@@ -14,7 +14,7 @@ $('#burger-icon-btn').on('change', function () {
 $(document).ready(function () {
     let the_url = new URL(window.location.href)
     id = the_url.searchParams.get('id')[0];
-    fetch('/tourist/data.json').then((res) => {
+    fetch('/quiz1/tourist/data.json').then((res) => {
         jsonres = res.json()
 
         return jsonres
