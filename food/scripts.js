@@ -18,7 +18,7 @@ function fillTheList(data) {
                 <div>
                     <h3 class="font-heading fg-text" >${data[i].title}</h3>
                     <p class="font-body fg-text" >${data[i].desc.substring(0,100)}...</p>
-                    <a href="/food/item/?id=${i}" class="highlighted-link"> Check_it_out</a>
+                    <a href="/quiz1/food/item/?id=${i}" class="highlighted-link"> Check_it_out</a>
                 </div>
                 <div>
                     <img src='${data[i].img_src}' alt=''/>
