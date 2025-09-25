@@ -1,0 +1,20 @@
+[
+    {
+        "title" : "Lontong Balap",
+        "desc"  : " Lontong is compressed rice cake, and balap is racing. so, lontong balap is racing lontong. No, it is not. Lontong Balap is a dish made made of lontong, tauge, fried tofu, lentho, fried shallots, and doused with soy sauce mixed with petis. Hmmm, if you see the ingridients, it does not have something related with race, so why is it called lontong balap? <br><br> The term balap comes from the history itself. Back then, Lontong Balap's seller needs to reace from a point to another with carrying what they are selling. ",
+        "img_src" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/20170125_105849283_Lontong_balap.jpg/1200px-20170125_105849283_Lontong_balap.jpg",
+        "Location" : ""
+    },
+    {
+        "title" : "Semanggi Suroboyo",
+        "desc"  : "Semanggi, or Pecel Semanggi, is a typical dish from Surabaya, East Java, made from steamed clover leaves and enjoyed with a delicious spicy chili sauce. Semanggi can also be served with bean sprouts, water spinach, rice crackers, and seasonings made from sweet potato. The sauces and seasonings used in semanggi dishes vary in ingredients and flavor.<br><br>Semanggi vendors in Surabaya use chili sauce made from Javanese sugar (more abundantly), shrimp paste, and chilies. <br><br>This Surabaya specialty originates from Kendung Village, Benowo, in the greater Surabaya area. Pecel Semanggi is known as a culinary heritage born from the creativity of the people of Kampung Semanggi in utilizing plants around their homes.<br><br>Since ancient times, Pecel Semanggi Surabaya has typically been sold by women wearing sarongs and scarves to carry their baskets of clover, walking around and shouting out their wares in villages and traditional markets in Surabaya.",
+        "img_src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlwE9sB9vM4KXSLLEgv6ixxtHordNPt4v1Vw&s",
+        "Location" : ""
+    },
+    {
+        "title" : "Rujak Cingur",
+        "desc" : "Rujak cingur is a traditional food from East Java, especially in the Arekan area. According to Surabaya history activists, the existence of rujak cingur in Surabaya began in the 1930s, brought by immigrants from Madura Island to survive by trading culinary delights, namely rujak cingur. Initially, traders from Madura used typical Madurese skipjack tuna petis, but to adapt to the tastes of the people of Surabaya, who are predominantly Javanese, they also used shrimp petis.",
+        "img_src" : "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/07/21044422/cara-membuat-rujak-cingur-sederhana-khas-surabaya.jpg",
+        "Location" : ""
+    }
+]
